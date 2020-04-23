@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+     <title>Часы</title>
+     <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>Запуск часов!</h1>
+    <script src="Clock.js"></script>
+  </body>
+</html>
