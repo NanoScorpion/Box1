@@ -1,0 +1,26 @@
+﻿<html>
+<head>
+    <title>Массив Аргументов arguments</title>
+    <script type="text/javascript">
+      function f(x, y, z) 
+	{
+        //Проверка, правильное ли количество аргументов передано
+        	if (arguments.length != 3)
+		{
+			document.write("<p> <b style = 'color:red;'>ERROR:</b> <em>Требуется три аргумента при вызове. Функция вызвана с " + arguments.length + "параметрами!</em>");
+		
+		}
+		else {
+			document.write("<p> <b style = 'color:green;'>Правильный вызов функции.</b> Аргументы: ");
+			for (var i = 0; i < arguments.length; i++)
+				document.write(arguments[i] + ", ");
+		}
+	}
+	f(1, 2, 3, 4); //Более 3 аргументов - ошибка!
+	f(1, 2, 3);
+	f(1, 2);       //Менее 3 аргументов - ошибка!
+    </script>
+</head>
+<body>
+</body>
+</html>
