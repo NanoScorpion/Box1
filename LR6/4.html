@@ -1,0 +1,31 @@
+﻿<html>
+<head>
+	<title>Аргументы функции</title>
+	<script type = "text/javaScript">
+		var a = 10;
+		var b = 15;
+		var c = 20;
+		var d = 21;
+		var x1; // Специально не определяем
+		var x2; // Специально не определяем
+		function Sum1()
+		{
+			var result = a + b;
+			document.write("<p>Sum1 result: " + result);
+			alert(result);
+		}
+		function Sum2(x1, x2)
+		{
+			var result = x1 + x2; // х1, х2 = undefined => indefined + undefined = NaN
+			document.write("<p>Sum2 result: " + result);
+			alert(result);
+		}
+		// Вызов функций
+		Sum1();
+		Sum2(); // Не передаем параметров при вызове
+		Sum2(c, d);
+	</script>
+</head>
+<body>
+</body>
+</html>
